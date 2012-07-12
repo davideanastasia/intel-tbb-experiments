@@ -1,0 +1,4 @@
+ADD_EXECUTABLE(parallel_min_max_test parallel_min_max_test.cpp parallel_min_max.hpp)
+TARGET_LINK_LIBRARIES(parallel_min_max_test ${TBB_LIBRARIES})
+
+ADD_TEST(parallel_min_max_test parallel_min_max_test)
