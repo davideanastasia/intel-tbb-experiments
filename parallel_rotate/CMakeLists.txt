@@ -1,0 +1,4 @@
+ADD_EXECUTABLE(parallel_rotate_test parallel_rotate_test.cpp parallel_rotate.hpp)
+TARGET_LINK_LIBRARIES(parallel_rotate_test ${TBB_LIBRARIES})
+
+ADD_TEST(parallel_rotate_test parallel_rotate_test)

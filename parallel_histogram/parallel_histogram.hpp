@@ -13,8 +13,6 @@
 namespace tbb_experiments
 {
 
-
-
 template<typename InputType, int LowerBound = 0, int Upperbound = 255>
 class parallel_histogram_t
 {
@@ -26,9 +24,9 @@ public:
         : input_vector_(input_v)
         , histogram_(Upperbound - LowerBound + 1)
     {
-        std::fill(histogram_.begin(),
-                  histogram_.end(),
-                  0);
+//        std::fill(histogram_.begin(),
+//                  histogram_.end(),
+//                  0);
     }
     
     //! \brief Special TBB split copy constructor
